@@ -1,0 +1,15 @@
+{
+  "name": "wizeacacademyqa",
+  "version": "1.0.0",
+  "description": "backend postman automation",
+  "main": "index.js",
+  "scripts": {
+    "testAPI": "npx newman run YOUR_APP/tests/backend/collection/Todoist.postman_collection.json -e YOUR_APP/tests/backend/envVariables/QA.postman_environment.json -r htmlextra --reporter-htmlextra-export YOUR_APP/tests/backend/reports/reporte.html"
+  },
+  "author": "Angelina",
+  "license": "ISC",
+  "dependencies": {
+    "newman": "^5.2.2",
+    "newman-reporter-htmlextra": "^1.20.1"
+  }
+}
